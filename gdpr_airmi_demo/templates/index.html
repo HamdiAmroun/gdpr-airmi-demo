@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AiRMI - GDPR Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>AiRMI</h2>
+        <ul>
+            <li class="active">Dashboard</li>
+            <li>Blurring Tool</li>
+            <li>Audit Log</li>
+            <li>Data Requests</li>
+            <li>Configuration</li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="header">
+            <h1>GDPR Dashboard</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Audit Log</a>
+                <a href="#">Settings</a>
+            </nav>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <h3>Processing Status</h3>
+                <ul>
+                    <li>3 IN PROGRESS</li>
+                    <li>8 COMPLIANT</li>
+                    <li>2 TO REVIEW</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Blurring Tool</h3>
+                <input type="file" accept="image/*,video/*">
+                <div class="images">
+                    <div><p>Before</p><img src="/static/before.jpg" width="100"></div>
+                    <div><p>After</p><img src="/static/after.jpg" width="100"></div>
+                </div>
+                <button>Export</button>
+            </div>
+            <div class="card">
+                <h3>Audit Log</h3>
+                <ul>
+                    <li>04/24/2024 - john.doe@airmi.com - DATA ACCESSED</li>
+                    <li>04/24/2024 - DATA ANONY - FILE DELETED</li>
+                    <li>04/23/2024 - jano.smith@airmi.com - DATA ACCESSED</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Configuration & Security</h3>
+                <ul>
+                    <li>Access Request - IN PROGRESS</li>
+                    <li>Erasure Request - COMPLETED</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
